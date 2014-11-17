@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignTop="@android:id/tabs" >
+
+                <fragment
+                    android:id="@+id/splashFragment"
+                    android:name="ie.wit.myandroidapp.SplashFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp" />
+
+               <!--  <fragment
+                    android:id="@+id/locationFragment"
+                    android:name="ie.wit.myandroidapp.LocationFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" /> -->
+
+<include android:id="@+id/googleMap"  
+            layout="@layout/location"/> 
+ <!-- 
+                <fragment 
+        		  android:id="@+id/mapFragment"
+        		  android:layout_width="match_parent"
+        		  android:layout_height="450dp"
+         		 android:name="com.google.android.gms.maps.MapFragment"
+         		/> -->
+                <!-- fragment
+                    android:id="@+id/loginFragment"
+                    android:name="ie.wit.myandroidapp.LoginFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" /-->
+
+                <fragment
+                    android:id="@+id/userSettingsFragment"
+                    android:name="com.facebook.widget.UserSettingsFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="485dp" />
+            </FrameLayout>
+        </RelativeLayout>
+    </TabHost>
+
+</LinearLayout>

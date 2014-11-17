@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/orderList"
+        android:layout_width="wrap_content"
+        android:layout_height="285dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/orderBarView"
+        style="@style/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/totalPrice"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+         <TextView
+            android:id="@+id/totalPriceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="48dp"
+            android:text="@string/toalPriceValue"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="26dp"
+            android:text="@string/payway"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RadioGroup
+            android:id="@+id/rg_mapType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button1"
+            android:layout_alignRight="@+id/totalPriceValue"
+            android:orientation="horizontal" >
+            
+             <RadioButton
+            android:id="@+id/radOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/online" />
+            
+            <RadioButton
+                android:id="@+id/radOffline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/offline" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/rg_mapType"
+            android:layout_below="@+id/textView2"
+            android:text="@string/okPay" />
+       
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   
+      <ImageView
+      android:id="@+id/image_res"
+      android:layout_width="150dip"
+      android:layout_height="170dip"
+      android:scaleType="centerCrop"
+      android:src="@drawable/icon"
+      />
+      
+      <TextView
+      android:id="@+id/title_res"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textColor="#000"
+      android:text="@string/res_name"
+      android:gravity="center_horizontal"
+      />
+
+      <TextView
+          android:id="@+id/priceLevel_res"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/res_price"
+          android:gravity="center_horizontal"
+         />
+
+      <TextView
+          android:id="@+id/rating_res"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/res_rating"
+          android:gravity="center_horizontal" />
+      <TextView
+          android:id="@+id/open_res"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/res_open"
+         android:gravity="center_horizontal" />
+
+</LinearLayout>

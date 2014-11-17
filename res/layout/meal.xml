@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/image_menu_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:src="@drawable/abc_ab_bottom_solid_dark_holo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/barTextView"
+            style="@style/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+      
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <NumberPicker
+                    android:id="@+id/numberPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="250dp"
+                    android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/ingredient"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ingredient"
+        android:textAppearance="?android:attr/textAppearanceLarge"  />
+                <TextView
+                    android:id="@+id/ingredientValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ingredientValue"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+            </RelativeLayout>
+       
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/energy"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        
+        android:text="@string/energy" 
+        android:textAppearance="?android:attr/textAppearanceLarge"  />
+
+    <TextView
+        android:id="@+id/energyValue"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:text="@string/energyValue"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="255dp"
+        android:background="@android:drawable/ic_input_add" />
+
+</LinearLayout>

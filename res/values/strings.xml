@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">InstantMenu</string>
+    <string name="appHelpTitle">InstantMenu Help</string>
+    <string name="appHelp">This is the help screen for InstantMenu</string>
+    <string name="appHelpExtra">Basically\, if you need help on using this app, you probably shouldn\'t be using it</string>
+    <string name="appWebsite">www.jumpyjosh.com</string>
+    <string name="app_id">443002462500764</string>
+    <string name="get_started">To get started, log in using Facebook</string>
+    <string name="settings">Settings</string>
+    <string name="error_dialog_title">Error</string>
+    <string name="error_dialog_button_text">OK</string>
+    <string name="single_user_selected">%1$s</string>
+    <string name="two_users_selected">%1$s and %2$s</string>
+    <string name="multiple_users_selected">%1$s and %2$s others</string>
+    <string name="action_location">Where are you?</string>
+    <string name="action_location_default">Select one</string>
+    <string name="no_location_error">Could not obtain your current location</string>
+    <string name="uname">User Name</string>
+    <string name="ps">Password</string>
+    <string name="reps">Strong Password</string>
+    <string name="tel">Mobile</string>
+    <string name="address">Address</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="forget_ps">Forget your password? Find </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="mealPrice">€20.00</string>
+    <string name="mealCount">1</string>
+    <string name="mealName">mealName</string>
+    <string name="totalPrice">Total Price: </string>
+    <string name="toalPriceValue">€120.00</string>
+    <string name="payway">Pay :</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="okPay">OK</string>
+    
+    
+    <!-- res -->
+    <string name="res_name">Restaurant Name</string>
+    <string name="res_price">Cheap</string>
+    <string name="res_rating">4.3</string>
+     <string name="res_open">Open</string>
+     <string name="ingredient">Ingredient:</string>
+     <string name="ingredientValue">IngredientValue</string>
+     <string name="energy">Energy:</string>
+     <string name="energyValue">300</string>
+        <string name="actCode">Active Code: </string>
+        
+    
+    <!--  -->
+    
+    <string name="euro">$</string>
+    <string name="version">2.0</string>
+    <string name="appDesc">InstantMenu provides the use with a quick and easy way to order your favourite meals.</string>
+    <string name="appMoreInfo">For more information about InstantMenu or to provide feedback please visit our website.</string>
+
+</resources>

@@ -1,0 +1,73 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+     <style name="appWindowTitleBackground">
+        <item name="android:background">@color/headerBGColor</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here.-->
+     </style>
+    
+    <style name="appTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">26dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/appWindowTitleBackground</item>
+    </style>
+    
+    <style name="appLayoutTheme" parent="android:Theme">
+        <item name="android:background">@color/appBGColor</item>
+        <item name="android:textColor">@color/appFontColor</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="header">
+        <item name="android:textColor">@color/headerFontColor</item>
+        <item name="android:background">@color/headerBGColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+     <style name="banner" parent="header">
+        <item name="android:textColor">@color/bannerFontColor</item>
+        <item name="android:background">@color/bannerBGColor</item>
+		<item name="android:textSize">14dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+    <style name="footer">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/appFooterBGColor</item>
+    </style>
+    
+     
+    <!-- Dialog Styles (Start) -->
+    
+	<style name="dialogContainer">
+	    <item name="android:orientation">vertical</item>
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">fill_parent</item>
+	    <item name="android:paddingLeft">10dp</item>
+	    <item name="android:paddingRight">10dp</item>
+	    <item name="android:paddingBottom">10dp</item>
+	</style>
+   
+	<style name="dialogButton">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_weight">0.50</item>
+	</style>
+	
+	<!-- Dialog Styles (End) -->
+</resources>

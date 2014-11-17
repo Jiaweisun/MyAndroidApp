@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignTop="@android:id/tabs" >
+
+                <fragment
+                    android:id="@+id/menu_sale_Fragment"
+                    android:name="ie.wit.myandroidapp.MenuSaleFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <fragment
+                    android:id="@+id/menu_all_Fragment"
+                    android:name="ie.wit.myandroidapp.MenuAllFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                     
+                 <fragment
+                    android:id="@+id/orderFragment"
+                    android:name="ie.wit.myandroidapp.OrderFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                    
+
+                <!-- 
+                <fragment
+                    android:id="@+id/userSettingsFragment"
+                    android:name="com.facebook.widget.UserSettingsFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                     -->
+            </FrameLayout>
+        </RelativeLayout>
+    </TabHost>
+
+</LinearLayout>

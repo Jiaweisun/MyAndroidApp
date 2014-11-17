@@ -1,0 +1,33 @@
+<!--  <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ie.wit.myandroidapp.MainActivity"
+    tools:ignore="MergeRootFrame" >-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ie.wit.myandroidapp.LoginFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+        
+        
+    <fragment
+        android:id="@+id/selectionFragment"
+        android:name="ie.wit.myandroidapp.SelectionFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    
+    <fragment
+        android:id="@+id/userSettingsFragment"
+        android:name="com.facebook.widget.UserSettingsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+         
+
+</LinearLayout>

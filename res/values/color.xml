@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Font Colours -->
+    <color name="appFontColor">#363737</color>
+     <color name="headerFontColor">#ffffff</color>
+    <color name="bannerFontColor">#ffffff</color>
+    <color name="textColor">#AFDEFE</color>
+    <color name="red">#FADADD</color>
+    <color name="pink">#FDD7E4</color>
+    <!-- bgcolor -->
+    <color name="appBGColor">#f8f9ff</color>
+    <color name="headerBGColor">#45719B</color>
+    <color name="bannerBGColor">#45719B</color>
+     <color name="activeBGColor">#149B9B</color>
+      <color name="bgColor">#ffffff</color>
+      <color name="appFooterBGColor">#dedede</color>
+    
+</resources>
